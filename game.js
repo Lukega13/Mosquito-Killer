@@ -10,7 +10,7 @@ stageResize()
 
 
 // General variables
-let lifes = 3
+let lifes = 99
 let time = 3
 let createNewMosquito = 1500
 
