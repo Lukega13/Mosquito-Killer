@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mosquito Killer</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body onresize="stageResize()" ondragstart="return false">
+
+	<div id="stage">
+
+		<div id="panel">
+			<div id="lives">
+				<img id="v3" src="imagens/coracao_cheio.png" />
+				<img id="v2" src="imagens/coracao_cheio.png" />
+				<img id="v1" src="imagens/coracao_cheio.png" />
+			</div>
+
+			<div id="timer">Tempo restante: <span id="timer-counter"></span></div>
+		</div>
+
+	</div>
+
+	<script src="game.js"></script>
+</body>
+
+</html>

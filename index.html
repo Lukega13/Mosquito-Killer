@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body ondragstart="return false">
+
+	<div id="index-container">
+
+		<div id="index-image">
+			<img src="imagens/game.png">
+		</div>
+
+		<div id="index-select">
+			<select id="difficult">
+				<option value="">-- Select the Difficulty --</option>
+				<option value="normal">Normal</option>
+				<option value="hard">Hard</option>
+				<option value="chucknorris">Chuck Norris</option>
+			</select>
+		</div>
+
+		<div id="index-button">
+			<button type="button" id="start-button" onclick="start()">Play</button>
+		</div>
+
+	</div>
+
+	<script>
+		function start() {
+			let difficult = document.getElementById('difficult')
+
+			if (difficult.value === '') {
+				alert('Select a difficulty to play')
+				return false
+			}
+
+			window.location.href = `app.html?${difficult.value}`
+		}
+	</script>
+</body>
+
+</html>
